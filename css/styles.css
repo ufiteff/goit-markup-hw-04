@@ -142,7 +142,16 @@
  
  
  .main_picture{
-     background-color: var(--dark-bg-cl);
+    max-width: 1200px;
+    background-image: url(../imeges/mainphoto.png);
+    
+     background-color: rgba(47, 48, 58, 0.4);
+     
+     background-repeat: no-repeat;
+     background-position: center;
+     
+     margin-left: auto;
+     margin-right: auto;
      padding-top: 200px;
      padding-bottom: 200px;
  
@@ -174,7 +183,8 @@
  margin-left: auto;
  margin-right: auto;
  padding: 10px 32px 10px 32px;
-
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
  
  
  
@@ -199,6 +209,7 @@
  }
  .work-list{
      display: flex;
+     gap: 30px;
      
  }
  .priorities_title{
@@ -228,12 +239,13 @@
  
  
  
+ 
  }
  .text:last-child{
      margin-right: 0;
  }
  /* What we doing */
- .about_work, .team{
+ .about_work, .team, .clients{
     padding-top: 94px;
     padding-bottom: 94px;
  }
@@ -251,7 +263,7 @@
  .img-item:last-child{
      margin-right: 0;
  }
- .about-title, .team-title{
+ .about-title, .team-title, .clients-title{
   font-weight: 700;
  font-size: 36px;
  line-height: calc(42 / 36);
@@ -297,6 +309,7 @@
      letter-spacing: 0.03em;
      
      color: #757575;
+     margin-bottom: 16px;
     
      
      
@@ -306,6 +319,10 @@
     padding-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
  }
  .team-wrapper-portfolio{
      border: 1px solid #EEEEEE;
@@ -314,6 +331,7 @@
      padding-bottom: 20px;
      padding-left: 24px;
      padding-right: 24px;
+     
  }
  
  /*Footer*/
@@ -366,6 +384,12 @@
     padding-bottom: 94px;
     
  }
+ .photo-wrapper:hover
+ {  cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+
+ }
  .photo-title{
      margin-bottom: 4px;
  font-weight: 700;
@@ -391,6 +415,8 @@
      margin-right: auto;
      padding: 6px 22px 6px 22px;  
      border: none;  
+     background: #F5F4FA;
+border-radius: 4px;
  
     font-family: inherit;
     font-weight: 500;
@@ -405,6 +431,7 @@
  .btn-portfolio:focus{
      background-color: #2196F3;
      color: #FFFFFF;
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
  }
  .btn1{
     width: 73px;
@@ -423,4 +450,119 @@
  .btn{
     width: 130px;
 
+ }
+
+ .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10;
+ }
+ .socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #AFB1B8;
+ }
+ .social-icon{
+    fill: currentColor;
+ }
+ .socials-link:hover,
+ .socials-link:focus{
+    color: #FFFFFF;
+    background-color: #2196F3;
+ }
+ .prior, .customers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+ }
+
+ 
+ .thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    
+ 
+    background-color: #F5F4FA;
+ }
+ .thumb-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ margin: 0;
+
+ }
+ .customers-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+border-radius: 4px;
+color: #AFB1B8;
+background-color: #FFFFFF;
+
+
+ }
+ .client-icon{
+    fill: currentColor;
+ }
+ .customers-item:hover,
+ .customers-item:focus{
+    color: #2196F3;
+    border: 1px solid #2196F3;
+ }
+ .container-footer{
+    display: flex;
+    align-items: baseline;
+ }
+ .footer-left{
+    margin-right: 70px;
+ }
+ 
+   
+ 
+ .join-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .join-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    color: #ffffff;
+ }
+ .join-icon{
+    fill: currentColor;
+ }  
+ .join-link:hover,
+ .join-link:focus{
+    background-color: #2196F3;
+ }
+ .join-title{
+    font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 20px;
  }
