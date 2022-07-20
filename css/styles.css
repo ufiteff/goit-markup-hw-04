@@ -127,6 +127,11 @@
  letter-spacing: 0.02em;
  color: #757575;
  }
+ .join-icon{
+    margin-right: 10px;
+ }
+ 
+ 
  
  .header-item:hover,
  .header-item:focus,
@@ -142,10 +147,11 @@
  
  
  .main_picture{
-    max-width: 1200px;
-    background-image: url(../imeges/mainphoto.png);
+    max-width: 1600px;
+    background-color: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../imeges/mainphoto.png);
     
-     background-color: rgba(47, 48, 58, 0.4);
+     
      
      background-repeat: no-repeat;
      background-position: center;
@@ -200,7 +206,7 @@ border-radius: 4px;
  }
  .button:hover,
  .button:focus{
-     background-color: blue;
+     background-color: #2196F3;
  }
  /* Work priorities */
  .priorities{
@@ -456,7 +462,7 @@ border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10;
+    
  }
  .socials-link{
     display: flex;
@@ -467,6 +473,7 @@ border-radius: 4px;
     background-color: #FFFFFF;
     border-radius: 50%;
     color: #AFB1B8;
+    margin-right: 10px;
  }
  .social-icon{
     fill: currentColor;
@@ -538,7 +545,7 @@ background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+   gap: 10px;
  }
 
  .join-link{
@@ -547,11 +554,13 @@ background-color: #FFFFFF;
     justify-content: center;
     width: 44px;
     height: 44px;
+   
     background-color: rgba(255, 255, 255, 0.1);;
     border-radius: 50%;
     color: #ffffff;
  }
  .join-icon{
+    margin: 0;
     fill: currentColor;
  }  
  .join-link:hover,
