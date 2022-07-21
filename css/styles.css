@@ -137,12 +137,12 @@ justify-content: center;
  }
  .mail-icon{
     margin-right: 10px;
+    fill: currentColor;
  }
 
  
- 
- .header-item:hover,
- .header-item:focus,
+ .header-link:hover,
+ .header-link:focus,
  .header-mail:hover,
  .header-mail:focus,
  .header-phone:hover,
@@ -259,14 +259,12 @@ border-radius: 4px;
      margin-right: 0;
  }
  /* What we doing */
- .about_work, .team {
+ .about_work, .team, .clients {
+    padding-bottom: 94px;
     padding-top: 94px;
     
  }
- .clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
- }
+
  .about-list{
      display: flex;
      gap: 30px;
