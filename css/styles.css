@@ -219,7 +219,7 @@ border-radius: 4px;
  /* Work priorities */
  .priorities{
     padding-top: 94px;
-    padding-bottom: 94px;
+    
  }
  .work-list{
      display: flex;
@@ -259,7 +259,11 @@ border-radius: 4px;
      margin-right: 0;
  }
  /* What we doing */
- .about_work, .team, .clients{
+ .about_work, .team {
+    padding-top: 94px;
+    
+ }
+ .clients{
     padding-top: 94px;
     padding-bottom: 94px;
  }
@@ -518,24 +522,26 @@ border-radius: 4px;
  margin: 0;
 
  }
- .customers-item{
+ .customers-link{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+
+
+border: 1px solid #AFB1B8;
 border-radius: 4px;
 color: #AFB1B8;
 background-color: #FFFFFF;
+}
 
 
- }
  .client-icon{
     fill: currentColor;
  }
- .customers-item:hover,
- .customers-item:focus{
+ .customers-link:hover,
+ .customers-link:focus{
     color: #2196F3;
     border: 1px solid #2196F3;
  }
